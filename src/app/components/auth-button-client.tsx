@@ -12,7 +12,7 @@ export default function AuthButton({ user } : { user: unknown }) {
     const handleSignIn = async () => {
         await supabase.auth.signInWithOAuth({
             provider: "github",
-            options: { redirectTo: "http://localhost:3000/auth/confirm" }
+            options: { redirectTo: "https://xrax.vercel.app/auth/confirm" }
         })
     };
 
