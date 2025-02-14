@@ -16,5 +16,5 @@ export async function GET(request: NextRequest) {
     redirect("/error")
   }
 
-  return NextResponse.redirect(requestUrl.origin) 
+  return NextResponse.redirect("/") 
 }
