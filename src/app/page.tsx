@@ -21,7 +21,7 @@ export default async function Home() {
   .order('created_at', { ascending: false })
 
   return (
-      <main className="flex min-h-screen flex-col items-center justify-center p-24 pt-0">
+      <main className="flex min-h-screen flex-col items-center justify-center p-24 pt-0 pb-0">
         <div className='flex flex-row w-full w-full max-w-[1100px]'>
           <header className='flex-col w-full max-w-[200px] mr-10'>
             <ul className='flex flex-col items-start justify-start w-full h-[90vh] gap-y-6' >
