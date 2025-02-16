@@ -14,8 +14,6 @@ export function ComposePost({
         'use server';
 
         const content = formData.get('content');
-        console.log(content);
-        
 
         if (content === null || content == "") return;
 
