@@ -14,8 +14,10 @@ export function ComposePost({
         'use server';
 
         const content = formData.get('content');
+        console.log(content);
+        
 
-        if (content === null) return;
+        if (content === null || content == "") return;
 
         const supabase = await createClient();
         // Comprobamos si el usuario está autenticado
